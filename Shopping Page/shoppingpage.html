@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Shopping Page - Andrada Nonica</title>
+
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 40px;
+            margin-right: 40px;
+            font-family: 'Muli Semibold';
+
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .ratingdimensions {
+            align-self: center;
+            display: flex;
+            color: gray;
+            font-family: 'Muli Semibold';
+            margin: -20px;
+            margin-top: 2px;
+
+        }
+
+        .a {
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+        }
+
+        .b {
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+        }
+
+        .c {
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+        }
+
+      
+
+        .centerImg {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .title {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-size: 28px;
+
+        }
+
+        .starspace {
+            margin-left: 10px;
+        }
+
+        .numberheart {
+            margin-left: 30px;
+        }
+
+        .lastspace {
+            margin-left: 10px;
+        }
+
+        .ratingdimensions img {
+            width: 20px;
+
+        }
+
+        .description {
+            display: flex;
+            margin: 11%;
+            font-family: 'Muli Semibold';
+            color: gray;
+        }
+
+        .allbuttons {
+            font-family: 'Muli';
+            display: flex;
+            justify-content: center;
+            margin: -35px;
+        }
+
+
+
+        .cart {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            background-color: black;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            position: relative;
+        }
+
+        .cart:hover {
+            border: 2px solid black;
+            background-color: white;
+            color: black;
+            transition-property: color;
+            transition-duration: 2s;
+            transition-timing-function: cubic-bezier(0.66, 0.33, 0.12, 0.83);
+        }
+
+        .view {
+            text-decoration: none;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border: solid;
+            font-weight: bold;
+            position: relative;
+            margin-left: 15px;
+        }
+
+        .view:hover {
+            background-color: black;
+            color: white;
+            transition-property: color;
+            transition-duration: 2s;
+            transition-timing-function: cubic-bezier(0.66, 0.33, 0.12, 0.83);
+        }
+
+        .line {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="a">
+            <img class="heroimage" src="image1.jpg">
+            <span class="title">Women's Black Dress</span>
+            <div class="ratingdimensions">
+                <img src="star.jpg">
+                <span class="starspace">5.0</span>
+                <img class="numberheart" src="heart.jpg">
+                <span class="lastspace">29</span>
+            </div>
+            <span class="description">The gathered waistline provides definition between your top and bottom
+                halves.</span>
+            <div class="allbuttons">
+                <div class="cart">
+                    <a class="cartbutton">CART</a>
+                </div>
+                <div class="view">
+                    <a class="viewbutton">VIEW</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="b">
+            <img class="heroimage" src="image2.jpg">
+            <span class="title">Men's Blue Jacket</span>
+            <div class="ratingdimensions">
+                <img src="star.jpg">
+                <span class="starspace">5.0</span>
+                <img class="numberheart" src="heartred.jpg">
+                <span class="lastspace">29</span>
+            </div>
+            <span class="description">Merging elements of heritage and tradition with cutting-edge techniques and
+                innovation.</span>
+            <div class="allbuttons">
+                <div class="cart">
+                    <a class="cartbutton">CART</a>
+                </div>
+                <div class="view">
+                    <a class="viewbutton">VIEW</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="c">
+            <img class="heroimage" src="image3.jpg">
+            <span class="title">Women's Cream Sweater</span>
+            <div class="ratingdimensions">
+                <img src="star.jpg">
+                <span class="starspace">5.0</span>
+                <img class="numberheart" src="heart.jpg">
+                <span class="lastspace">29</span>
+            </div>
+            <span class="description">Designed to fit the contours of your body, find the comfort to complement your
+                style.</span>
+            <div class="allbuttons">
+                <div class="cart">
+                    <a>CART</a>
+                </div>
+                <div class="view">
+                    <a>VIEW</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div>
+        <img class="line" src="line.jpg">
+    </div>
+
+</body>
+
+</html>

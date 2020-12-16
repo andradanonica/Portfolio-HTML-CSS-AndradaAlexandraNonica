@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Homework 1 / Week 3 - Andrada Nonica</title>
+    <style>
+        body {
+            padding: 5px;
+            margin: 5px;
+            font-family: Muli;
+        }
+
+        .modal {
+            z-index: 2;
+            position: absolute;
+            width: 320px;
+            height: 250px;
+
+            top: 50%;
+            left: 50%;
+            margin-left: -160px;
+            margin-top: -125px;
+
+            background-color: white;
+
+            -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+            -moz-box-shadow: 3px 3px 5px 6px #ccc;
+            box-shadow: 3px 3px 30px 6px #ccc;
+        }
+
+
+        .pageContent {
+            max-width: 320px;
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+
+        .modalTitle {
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        .xButton {
+            float: right;
+        }
+
+        .firstLine {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        input[type="text"] {
+            padding: 5px;
+            width: 265px;
+            border: 1px solid lightgray;
+        }
+
+        .lastButtons {
+            display: flex;
+            justify-content: flex-end;
+
+        }
+
+        h1 {
+            position: absolute;
+            top: 15%;
+            left: 5%;
+        }
+
+        h2 {
+            position: absolute;
+            top: 25%;
+            left: 5%;
+        }
+
+        .second {
+            position: absolute;
+            top: 33%;
+            left: 25%;
+        }
+
+        .submit input {
+            border: none;
+            background-color: white;
+            color: #4e4cc3;
+            padding: 5px;
+        }
+
+        .submit input:hover {
+            background-color: #4e4cc3;
+            color: white;
+            cursor: pointer;
+        }
+
+        .close input {
+            border: none;
+            background-color: white;
+            color: #4e4cc3;
+            padding: 5px;
+        }
+
+        .close input:hover {
+            background-color: #4e4cc3;
+            color: white;
+            cursor: pointer;
+        }
+
+        .xButton input {
+            border: none;
+            background-color: white;
+            color: black;
+
+        }
+
+        .xButton input:hover {
+            background-color: #4e4cc3;
+            color: white;
+            cursor: pointer;
+        }
+     
+    </style>
+</head>
+
+<body>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h1>This is an example of putting things on top of eachother</h1>
+    <h2>The following text will be partially underneath the modal.</h2>
+    <h1 class="second">This text is underneath the modal.</h1>
+
+    <div class="modal">
+        <div class="pageContent">
+            <div class="firstLine">
+                <div class="modalTitle">Modal title</div>
+                <div class="xButton"> <input type="button" value="X" /></div>
+            </div>
+            <br>
+            <br>
+            <div class="name">Name</div>
+            <div class="inputField"><input type="text" placeholder="Name"></div>
+            <br>
+            <br>
+            <div class="lastButtons">
+                <div class="submit"> <input type="button" value="Submit" /> </div>
+                <div class="close"> <input type="button" value="Close" /> </div>
+            </div>
+        </div>
+      </div>
+      
+
+</body>
+
+</html>

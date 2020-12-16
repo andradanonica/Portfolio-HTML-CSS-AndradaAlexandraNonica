@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ContactUs - Andrada Nonica</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Muli;
+            ;
+        }
+
+        #topBar {
+            display: flex;
+            align-items: center;
+            background-color: #f5f5f5;
+            height: 200px;
+            margin-left: 3%;
+            margin-right: 3%;
+        }
+
+        .pageContent {
+            display: flex;
+            align-items: baseline;
+            max-width: 1400px;
+            margin-left: 20%;
+        }
+
+        .logo {
+            font-size: 60px;
+            color: #333333;
+        }
+
+        .logoContainer {
+            display: flex;
+            padding-left: 20px;
+            font-size: 40px;
+            color: #999999;
+        }
+
+        #wraper {
+            display: flex;
+            justify-content: center;
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: #f5f5f5;
+            margin-top: 30px;
+            padding-top: 10px;
+            padding-bottom: 15px;
+            border-radius: 5px;
+        }
+
+        .leftSide {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .rightSide {
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+        }
+
+        input[type="text"] {
+            border-radius: 3px;
+            padding: 5px;
+            width: 250px;
+            border: 1px solid lightgray;
+            margin-bottom: 10px;
+        }
+
+        .arranging {
+            display: flex;
+        }
+
+        .name {
+            padding-bottom: 5px;
+        }
+
+        .rightSide input {
+            padding: 5px;
+            width: 250px;
+            height: 136px;
+            border: 1px solid lightgray;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        }
+
+        .textarea {
+            border: 1px solid lightgray;
+            border-radius: 3px;
+        }
+
+        .bottomSide {
+            display: flex;
+            flex-direction: column-reverse;
+            margin-top: 190px;
+            margin-left: -106px;
+        }
+
+        input[type="button"] {
+            padding: 6px;
+            margin-top: 10px;
+            background-color: #428bca;
+            border: none;
+            color: white;
+            border-radius: 3px;
+        }
+
+        .sendMessage :hover {
+            background-color: #454545;
+            color: white;
+            cursor: pointer;
+        }
+
+        .socialMedia {
+            display: flex;
+            justify-content: center;
+            margin-top: 5px;
+        }
+
+        hr {
+            width: 25%;
+            opacity: 0.5;
+        }
+
+        .socialMediaLink {
+            font-size: 12px;
+            display: flex;
+            width:25%;
+            justify-content: space-between;
+        }
+
+        .wraps {
+            display: flex;
+            justify-content: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: #428bca;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="topBar">
+        <div class="pageContent">
+            <div class="logo"><span>Contact us</span></div>
+            <div class="logoContainer"><span>Feel free to contact us</span></div>
+
+        </div>
+    </header>
+
+    <div id="wraper">
+        <div class="arranging">
+            <div class="leftSide">
+                <div class="name">Name</div>
+                <div class="inputField"><input type="text" placeholder="Enter name"></div>
+                <div class="name">Email</div>
+                <div class="inputField"><input type="text" placeholder="Enter email"></div>
+                <div class="name">Subject</div>
+                <div class="inputField"><input type="text" placeholder="Enter subject"></div>
+            </div>
+
+            <div class="rightSide">
+                <div class="name">Message</div>
+                <textarea class="textarea" rows="10" cols="50">Message</textarea>
+            </div>
+
+        </div>
+
+
+        <div class="bottomSide">
+            <div class="sendMessage"> <input type="button" value="Send Message" /> </div>
+        </div>
+    </div>
+
+    <div class="socialMedia">Or find us on social media</div>
+
+    <hr>
+    <div class="wraps">
+        <div class="socialMediaLink">
+            <a href>Facebook</a>
+            <a href>Twitter</a>
+            <a href>Instagram</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Blog Design Homework - Andrada Nonica</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+
+        .wraper {
+
+            margin: auto;
+            padding: 1rem 2rem;
+            max-width: 48rem;
+            margin-bottom: 80px;
+            line-height: 1.6em;
+
+
+        }
+
+        .header {
+            border-bottom: 2px solid #544;
+            margin-bottom: 30px;
+            padding: 12px 0px;
+            color: #544;
+            font-size: 18px;
+        }
+
+        .navigation,
+        .header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navigation span {
+            margin-left: 12px;
+            font-weight: bold;
+        }
+
+        .info {
+            color: #555;
+            font-size: 17px;
+            font-style: italic;
+        }
+
+
+        .text {
+            font-size: 21px;
+            max-width: 100%;
+            box-sizing: border-box;
+            display: block;
+            line-height: 1.6em;
+
+        }
+
+        h1 {
+            box-sizing: border-box;
+            font-size: 25px;
+            margin-block-start: 0.67em;
+            margin-block-end: 0.67em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="wraper">
+        <div class="header">
+            <div class="author">
+                <strong>Jeremy's Blog</strong>
+            </div>
+            <div class="navigation">
+                <span>HOME </span>
+                <span>ABOUT </span>
+                <span>ARCHIVE </span>
+            </div>
+        </div>
+
+
+        <div class="text">
+            <h1>Rules for Autocomplete</h1>
+
+
+
+            <div class="info">Posted on March 19, 2019</div>
+
+            <!-- Text here-->
+            <p>
+                Autocompleting text with known values seems like an easy problem to solve, but so so so many UIs get it
+                wrong. I see this
+                frequently enough that, rather than complain about them individually, I though I’d just write down the
+                set of rules they often
+                break.
+            </p>
+            <p>
+                There may be cases where some of these rules aren’t the best thing to do, but there should be a good
+                reason for breaking one of
+                these rules (for example, some of these rules don’t apply if a field must be filled with a value from a
+                fixed set, like the list
+                of US states). Following these rules should always result in at very least a sane experience:
+            </p>
+            <ul>
+                <li>Exact matches always come first. If the user types in an option exactly, other options must always
+                    go below the one matching
+                    what they typed.</li>
+                <li>Besides exact matches, prefix matches come first. If I type “Fr” I want “Fresno” not “San
+                    Francisco.”
+                </li>
+                <li>After prefix matches, it can fall back to substring matches. Starting with substring matches would
+                    almost always be the
+                    wrong thing to do since users start typing words at the beginning not somewhere in the middle.</li>
+                <li>If there are no substring matches, it can optionally fall back to subsequence matching. This is only
+                    useful in some cases.</li>
+                <li>If there are no subsequence/substring matches, it can optionally fall back to approximate matches.
+                    This is rarely necessary to provide.</li>
+                <li>Matches should be sorted alphabetically.</li>
+                <li>When one option is the prefix of another, put the <em>shortest one first</em>.</li>
+                <li>The matching should probably be case insensitive unless there are two options that differ only by
+                    case.
+                    In that case (pun intended), prefer the one that more closely matches the user’s input.</li>
+                <li>The action to make use of the selection (e.g. to search the term) must be a different key than the
+                    action to accept the first suggestion
+                    <em>unless</em> you have to do something first to start using autocomplete suggestions (e.g. hit the
+                    down arrow). The user should never have to
+                    take extra steps to <em>not</em> use autocomplete.</li>
+            </ul>
+
+
+
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>

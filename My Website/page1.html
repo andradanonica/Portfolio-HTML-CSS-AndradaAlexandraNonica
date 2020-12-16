@@ -1,0 +1,85 @@
+<html>
+
+<head>
+    <title>Portfolio - Andrada Nonica</title>
+    <link rel="stylesheet" href="portfoliogeneric.css" />
+
+    <style>
+        .content {
+            margin-bottom: 5%;
+            flex-direction: column;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            color: 151515;
+
+        }
+
+        .centerbutton {
+            text-decoration: none;
+            color: 151515;
+            border: 1px solid;
+            padding: 5px;
+            letter-spacing: 14px;
+            position: relative;
+
+        }
+
+        .centerbutton:hover {
+            color: white;
+            transition-property: color;
+            transition-duration: 2s;
+            transition-timing-function: cubic-bezier(0.66, 0.33, 0.12, 0.83);
+            transition: ease all .6s;
+            transform: scale(1.2);
+        }
+
+        
+
+        .mainscreen {
+            font-size: 72px;
+        }
+
+        @keyframes slideInFromLeft {
+            0% {
+                transform: translateX(10%);
+            }
+
+            5% {
+                transform: translateY(5);
+            }
+        }
+
+        .mainscreen {
+            animation: 1s ease-out 0s 1 slideInFromLeft;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="wraper">
+        <div class="header">
+            <a class="largebutton" href="page1.html">NAA</a>
+            <div class="headerbutton">
+                <a href="page3.html">ABOUT</a>
+                <a href="page4.html">CONTACT</a>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="mainscreen">
+                <p class="web">WEB DESIGN & LOGOS</p>
+            </div>
+            <a class="centerbutton" href="page2.html">SEE MY WORK</a>
+        </div>
+
+        <div class="footer">
+            <h6>ANDRADA ALEXANDRA NONICA</h6>
+        </div>
+    </div>
+</body>
+
+</html>
